@@ -15,6 +15,7 @@ import {
   ListTitle,
 } from "./TechnologiesStyles";
 
+const titleText = "I've worked with a range of technologies in the web development market.";
 
 const Technologies = () => (
   <Section>
@@ -22,7 +23,7 @@ const Technologies = () => (
     <br />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked with a range of technologies in the web development market.
+      {titleText}
     </SectionText>
     <List>
       <ListItem>
