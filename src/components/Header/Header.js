@@ -34,22 +34,22 @@ const Header = () => (
 
     <Div2>
       <li>
-        <Link href="#projects" passHref={false}>
+        <Link href="#projects" passHref={true}>
           <NavLink>Projects</NavLink>
         </Link>
       </li>
       <li>
-        <Link href="#tech" passHref={false}>
+        <Link href="#tech" passHref={true}>
           <NavLink>Tech</NavLink>
         </Link>
       </li>
       <li>
-        <Link href="#about" passHref={false}>
+        <Link href="#about" passHref={true}>
           <NavLink>About</NavLink>
         </Link>
       </li>
       <li>
-        <Link href="#contact" passHref={false}>
+        <Link href="#contact" passHref={true}>
           <NavLink>Contact</NavLink>
         </Link>
       </li>

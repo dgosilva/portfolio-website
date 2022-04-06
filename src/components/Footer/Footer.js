@@ -17,6 +17,8 @@ import {
   SocialIconsContainer,
 } from "./FooterStyles";
 
+const sloganText = "Let's work together!"
+
 const Footer = () => {
   return (
     <FooterWrapper id="contact">
@@ -35,7 +37,7 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>Let's work together!</Slogan>
+          <Slogan>{sloganText}</Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons href="https://github.com/dgosilva" target="_blank">
