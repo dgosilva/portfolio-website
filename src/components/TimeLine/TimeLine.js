@@ -80,7 +80,7 @@ const Timeline = () => {
         Logic and Programming languages. From working in small projects to contributing to large teams in the largest bank in Latin America,
         and one of the largest in the world.
         <br /> <br />
-        I really enjoy a challenge, and don't consider myself bound to any particular technology. Instead, not knowing something just makes 
+        I really enjoy a challenge, and don&apos;t consider myself bound to any particular technology. Instead, not knowing something just makes 
         me want to study and learn more about it.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
