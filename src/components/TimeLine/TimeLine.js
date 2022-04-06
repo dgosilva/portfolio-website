@@ -65,9 +65,23 @@ const Timeline = () => {
       <br />
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        [How did I start, biggest milestones, etc...] The purpose of Javascript
-        mastery is to help aspiring and established developers to take their
-        development skills to the next level and build awesome apps.
+        In 2009 I began my journey into the IT world. Studying Computer Science at the University, I learned a lot
+        from the instructors, indeed. But I also developed an ability to study and learn on my own, giving myself the freedom to pursue my
+        personal goals and interests. 
+        <br /> <br />
+        After an experience developing and publishing a game at SBGames (the greatest academic event in Latin America 
+        in the field of gaming and entertainment), my interest in the area grew exponentially.
+        <br /> <br />
+        As an exchange student, I studied for a year in Australia, at the University of Adelaide, where I learned so much more about the
+        field, with renowned professors and doctors from around the world. 
+        And through this year, I was visually growing a lot in every area in life: professinally, spiritually, personally, emotionally...
+        <br /> <br />
+        Later, I finished my studies, back in Brazil, and had many professional experiences since then. From teaching English, to teaching
+        Logic and Programming languages. From working in small projects to contributing to large teams in the largest bank in Latin America,
+        and one of the largest in the world.
+        <br /> <br />
+        I really enjoy a challenge, and don't consider myself bound to any particular technology. Instead, not knowing something just makes 
+        me want to study and learn more about it.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>

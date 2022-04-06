@@ -30,8 +30,7 @@ export const MainImage = styled.img`
 export const List = styled.ul`
   list-style-type: none;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
   margin: 3rem 0;
   
   @media ${props => props.theme.breakpoints.lg}{
@@ -40,7 +39,6 @@ export const List = styled.ul`
 
   @media ${props => props.theme.breakpoints.md}{
     margin: 64px 0;
-    gap: 24px
   }
   
   @media ${props => props.theme.breakpoints.sm}{
@@ -62,19 +60,19 @@ export const ListContainer = styled.div`
 
 export const ListTitle = styled.h4`
   font-weight: 700;
-  font-size: 28px;
-  line-height: 32px;
+  font-size: 24px;
+  line-height: 30px;
   letter-spacing: 0.02em;
   color: #FFFFFF;
   margin-bottom: 8px;
 
 @media ${props => props.theme.breakpoints.md}{
-  font-size: 24px;
+  font-size: 20px;
   line-height: 28px;
 }
 
 @media ${props => props.theme.breakpoints.sm}{
-  font-size: 20px;
+  font-size: 24px;
   line-height: 28px;
   letter-spacing: 0.02em;
   margin-bottom: 4px;

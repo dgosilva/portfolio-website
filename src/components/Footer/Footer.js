@@ -2,6 +2,7 @@ import React from "react";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiOutlineWhatsApp } from "react-icons/ai";
 import { FiPhoneCall } from "react-icons/fi";
 import { MdAlternateEmail } from "react-icons/md";
+import { SectionTitle } from "../../styles/GlobalComponents";
 
 import { SocialIcons } from "../Header/HeaderStyles";
 import {
@@ -19,6 +20,7 @@ import {
 const Footer = () => {
   return (
     <FooterWrapper id="contact">
+      <SectionTitle>Feel free to contact me</SectionTitle>
       <LinkList>
         <LinkColumn>
           <LinkTitle><AiOutlineWhatsApp /> Whatsapp</LinkTitle>
@@ -33,7 +35,7 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>Innovating one project at a time</Slogan>
+          <Slogan>Let's work together!</Slogan>
         </CompanyContainer>
         <SocialContainer>
           <SocialIcons href="https://github.com/dgosilva" target="_blank">

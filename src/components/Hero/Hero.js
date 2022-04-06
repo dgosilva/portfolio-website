@@ -12,10 +12,10 @@ const Hero = (props) => (
         My Personal Portfolio
       </SectionTitle>
       <SectionText>
-        [What do I offer?...]
-        The purpose of Javascript mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+        I'm a Full Stack web developer based in Brasília, Brazil. <br />
+        Ready to hear your ideas and put them in practice!
       </SectionText>
-      <Button onClick={() => window.location = 'https://google.com'}>Learn More</Button>
+      <Button onClick={() => window.open('https://docs.google.com/document/d/e/2PACX-1vTBPrvbWUV85bVx6CgPp4Pc_WGz9HZEeoFoSarxTrbfVRKov-gBFQ7-WxgC5FfPOQljJNde-qjxUdkG/pub', '_blank')}>Read my CV</Button>
     </LeftSection>
   </Section>
 );
