@@ -11,7 +11,7 @@ import { Section } from "../styles/GlobalComponents";
 const title = "David Silva";
 const siteName = "David Silva's Portfolio";
 const description = "A Full Stack developer's portfolio";
-const thumbnailUrl = "https://www.facebook.com/photo/?fbid=4895367730555205&set=a.108773042548055"
+const thumbnailUrl = "https://unsplash.com/photos/dMUt0X3f59Q"
 
 const Home = () => {
   return (
