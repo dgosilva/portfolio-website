@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 
 import {
+  BackgroundImg,
   CarouselButton,
   CarouselButtonDot,
   CarouselButtons,
@@ -26,8 +27,8 @@ const Timeline = () => {
   const carouselRef = useRef();
 
   const scroll = (node, left) => {
-    return node.scrollTo({ left, behavior: 'smooth' });
-  }
+    return node.scrollTo({ left, behavior: "smooth" });
+  };
 
   const handleClick = (e, i) => {
     e.preventDefault();
@@ -43,45 +44,56 @@ const Timeline = () => {
 
   const handleScroll = () => {
     if (carouselRef.current) {
-      const index = Math.round((carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) * TimeLineData.length);
+      const index = Math.round(
+        (carouselRef.current.scrollLeft /
+          (carouselRef.current.scrollWidth * 0.7)) *
+          TimeLineData.length
+      );
 
       setActiveItem(index);
     }
-  }
+  };
 
   // // snap back to beginning of scroll when window is resized
   // // avoids a bug where content is covered up if coming from smaller screen
   useEffect(() => {
     const handleResize = () => {
       scroll(carouselRef.current, 0);
-    }
+    };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
   }, []);
 
   return (
     <Section id="about">
+      <BackgroundImg src={'/images/my_pic.jpg'} />
       <SectionDivider />
       <br />
       <SectionTitle>About Me</SectionTitle>
       <SectionText>
-        In 2009 I began my journey into the IT world. Studying Computer Science at the University, I learned a lot
-        from the instructors, indeed. But I also developed an ability to study and learn on my own, giving myself the freedom to pursue my
-        personal goals and interests. 
+        In 2009 I began my journey into the IT world. Studying Computer Science
+        at the University, I learned a lot from the instructors, indeed. But I
+        also developed an ability to study and learn on my own, giving myself
+        the freedom to pursue my personal goals and interests.
         <br /> <br />
-        After an experience developing and publishing a game at SBGames (the greatest academic event in Latin America 
-        in the field of gaming and entertainment), my interest in the area grew exponentially.
+        After an experience developing and publishing a game at SBGames (the
+        greatest academic event in Latin America in the field of gaming and
+        entertainment), my interest in the area grew exponentially.
         <br /> <br />
-        As an exchange student, I studied for a year in Australia, at the University of Adelaide, where I learned so much more about the
-        field, with renowned professors and doctors from around the world. 
-        And through this year, I was visually growing a lot in every area in life: professinally, spiritually, personally, emotionally...
+        As an exchange student, I studied for a year in Australia, at the
+        University of Adelaide, where I learned so much more about the field,
+        with renowned professors and doctors from around the world. And through
+        this year, I was visually growing a lot in every area in life:
+        professinally, spiritually, personally, emotionally...
         <br /> <br />
-        Later, I finished my studies, back in Brazil, and had many professional experiences since then. From teaching English, to teaching
-        Logic and Programming languages. From working in small projects to contributing to large teams in the largest bank in Latin America,
-        and one of the largest in the world.
-        <br /> <br />
-        I really enjoy a challenge, and don&apos;t consider myself bound to any particular technology. Instead, not knowing something just makes 
-        me want to study and learn more about it.
+        Later, I finished my studies, back in Brazil, and had many professional
+        experiences since then. From teaching English, to teaching Logic and
+        Programming languages. From working in small projects to contributing to
+        large teams in the largest bank in Latin America, and one of the largest
+        in the world.
+        <br /> <br />I really enjoy a challenge, and don&apos;t consider myself
+        bound to any particular technology. Instead, not knowing something just
+        makes me want to study and learn more about it.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>

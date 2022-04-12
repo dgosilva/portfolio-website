@@ -51,6 +51,7 @@ const Projects = () => (
         )
       )}
     </GridContainer>
+    <br />
   </Section>
 );
 

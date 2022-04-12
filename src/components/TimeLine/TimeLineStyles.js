@@ -153,3 +153,15 @@ export const CarouselButtonDot = styled.div`
   width: 3px;
   height: 3px;
 `
+
+export const BackgroundImg = styled.img`
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0.4;
+  margin-left: 50%;
+
+  @media ${props => props.theme.breakpoints.sm} {
+    margin-left: 0;
+  }
+`
