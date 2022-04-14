@@ -66,7 +66,7 @@ const Timeline = () => {
 
   return (
     <Section id="about">
-      <BackgroundImg src={'/images/my_pic.jpg'} />
+      <BackgroundImg src={"/images/my_pic.jpg"} />
       <SectionDivider />
       <br />
       <SectionTitle>About Me</SectionTitle>
